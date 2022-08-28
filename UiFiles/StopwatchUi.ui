@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>553</width>
+    <height>292</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>553</width>
+    <height>292</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>553</width>
+    <height>292</height>
+   </size>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="tabletTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#MainWindow{
+background-image: url(:/images/bg.jpg);
+}</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks</set>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>220</y>
+      <width>551</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <widget class="QPushButton" name="btn_start">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>531</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>30</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+        <underline>false</underline>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btn_start{
+	border-radius: 20px;
+	background-color: rgb(0, 255, 0);
+}
+
+QPushButton#btn_start:hover{
+	background-color: rgb(0, 170, 0);
+}
+
+
+QPushButton#btn_start:pressed{
+	padding-left: 5px;
+	padding-top: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Start</string>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QPushButton" name="btn_stop">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>0</y>
+        <width>531</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>30</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btn_stop{
+	border-radius: 20px;
+	background-color: rgb(255, 0, 0);
+}
+
+QPushButton#btn_stop:hover{
+	background-color: rgb(170, 0, 0);
+}
+
+
+QPushButton#btn_stop:pressed{
+	padding-left: 5px;
+	padding-top: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Stop</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QPushButton" name="btn_reset">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>261</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>20</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btn_reset{
+	border-radius: 20px;
+	background-color: rgb(255, 255, 0);
+}
+
+QPushButton#btn_reset:hover{
+	background-color: rgb(255, 255, 127);
+}
+
+
+QPushButton#btn_reset:pressed{
+	padding-left: 5px;
+	padding-top: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Reset</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_continue">
+      <property name="geometry">
+       <rect>
+        <x>274</x>
+        <y>0</y>
+        <width>261</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>20</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btn_continue{
+	border-radius: 20px;
+	background-color: rgb(85, 255, 127);
+}
+
+QPushButton#btn_continue:hover{
+	background-color: rgb(0, 255, 0);
+}
+
+
+QPushButton#btn_continue:pressed{
+	padding-left: 5px;
+	padding-top: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Continue</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_time" native="true">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>19</y>
+      <width>551</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>-20</y>
+       <width>551</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial Black</family>
+       <pointsize>87</pointsize>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string>00:00:00</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

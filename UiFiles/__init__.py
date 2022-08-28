@@ -1,0 +1,1 @@
+from .StopwatchUi import Ui_MainWindow
